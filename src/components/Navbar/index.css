@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-logo: 'Titillium Web';
+    --font-body: 'Roboto';
+    --color-text: black;
+}
+
+
+body{
+font-family: var(--font-body);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+height: 8vh;
+width: 100%;
+box-shadow: 1px 1px 15px rgba(73, 73, 73, 0.345);
+border: rgba(144, 143, 143, 0.981);
+}
+
+.nav-links-list{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 1023px){
+.navbar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+height: 8vh;
+width: 100%;
+box-shadow: 1px 1px 15px rgba(73, 73, 73, 0.345);
+border: rgba(144, 143, 143, 0.981);
+}
+
+
+
+.logo{
+   font-family: var(--font-logo);
+   font-size: 1.1em;
+margin-left: 10px;
+
+}
+
+.navbar-links {
+      display: flex;
+    flex-direction: row;
+ justify-content: center;
+ font-family: var(--font-logo);
+}
+
+.navbar-links ul{
+   display: flex;
+        flex-direction: row;
+       
+    list-style-type: none;
+      width: 90%;
+}
+
+.navbar-links li{
+    display: flex;
+    margin-right: 30px;
+    font-size: 1em;
+
+}
+
+.navbar-links li a{
+        color: var(--color-text);
+    text-decoration: none;
+ 
+}
+}

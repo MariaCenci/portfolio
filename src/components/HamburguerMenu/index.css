@@ -1,0 +1,17 @@
+.hamburguer-icon{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+
+}
+
+
+ul.list-pages li {
+    list-style-type: none;
+}
+
+ul.list-pages li a{
+    text-decoration: none;
+   
+}
