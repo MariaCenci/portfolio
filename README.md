@@ -1,6 +1,6 @@
 # **My Portfolio**
 
-Hello there 👋!
+Hello there!👋
 
 I'm Maria Fernanda Cenci, a Junior Web Developer, and this is my portfolio where I showcase my skills and projects.
 
