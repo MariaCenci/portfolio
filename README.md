@@ -1,27 +1,17 @@
-# React + TypeScript + Vite
+# **My Portfolio**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello! I'm Maria Fernanda Cenci, a Junior Web Developer, and this is my portfolio where I showcase my skills and projects.
 
-Currently, two official plugins are available:
+## **About Me**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I'm currently on a journey to become a proficient Junior web developer. With each project, I'm learning and practicing, and that's the most exciting part of it all. I have a strong passion for coding and a commitment to continuous improvement.
 
-## Expanding the ESLint configuration
+## **Projects**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You'll find a collection of projects here that represent my growth and skills. Each project is a new step on my path to becoming a developer. Feel free to explore and provide feedback.
 
-- Configure the top-level `parserOptions` property like this:
+## **Contact**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+I'd love to connect and collaborate with fellow developers, designers, and anyone interested in the web world. If you'd like to get in touch or discuss potential opportunities, please don't hesitate to reach out.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Thank you for taking the time to check out my portfolio!
