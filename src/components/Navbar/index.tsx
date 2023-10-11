@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         <nav className="navbar">
           <div className="logo">
-            <span>&lt;Maria Cenci /&gt;</span>
+            <span>MariaCenci</span>
           </div>
           
         <div className="navbar-links ">

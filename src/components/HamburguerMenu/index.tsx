@@ -13,13 +13,16 @@ const HamburguerMenu = () => {
     <>
       <div
         onClick={toggleMenu}
-        className={activeMenu ? "toggleActive" : "toggle"}
-      >
+        className={activeMenu ? "toggleActive" : "toggle"}   >
+   
         <div className=" hamburguer-icon"></div>
       </div>
 
       <div className={activeMenu ? "menuOpen" : "menuClose"}>
-        <div className="menu-list">
+       
+        {
+            activeMenu &&(
+         <div className="menu-list">
           <ul className="list-pages">
             <li>
               <Link to="/">About</Link>
@@ -31,8 +34,12 @@ const HamburguerMenu = () => {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-        </div>
-      </div>
+          </div>
+      ) 
+       
+      }
+    
+     </div>
     </>
   );
 };
