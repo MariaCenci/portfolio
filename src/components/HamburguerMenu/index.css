@@ -9,8 +9,8 @@
 transition: 0.5s;
 border-radius: 15px;
 position: absolute;
-right: 17%;
-top: 4%;
+right: 10%;
+top: 3.7%;
 
 
 }
@@ -65,20 +65,20 @@ align-items: center;
 
 
 .menu-list .list-pages {
-    padding: 0;
+    display: flex;
+    flex-direction: column ;
+justify-content: space-around;
+align-items: center;
+    
 }
 
 .menu-list .list-pages li{
-    margin: 15px 0;
+    margin: 35px 0;
 color: black;
 margin-bottom: 50px;
-font-size: .9em;
+font-size: 1.2em;
 font-family: var(--font-body);
 
-display: flex;
-flex-direction: column ;
-justify-content: space-around;
-align-items: center;
 }
 
 .toggleActive .hamburguer-icon{

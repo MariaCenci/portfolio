@@ -4,6 +4,8 @@ import HamburguerMenu from "../HamburguerMenu";
 import "./index.css";
 
 const Navbar: React.FC = () => {
+
+    //updates screen width for responsivity
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -12,6 +14,7 @@ const Navbar: React.FC = () => {
     };
     window.addEventListener("resize", updateWidth);
 
+    //cleanup
     return () => {
       window.removeEventListener("resize", updateWidth);
     };
@@ -21,11 +24,9 @@ const Navbar: React.FC = () => {
     <>
       <div className="navbar-container">
         <nav className="navbar">
-          <div className="logo">
-            <span>MariaCenci</span>
-          </div>
-          
+         
         <div className="navbar-links ">
+           {/*activates hamburguer menu for mobile */}
               {screenWidth <= 768 && <HamburguerMenu />}
            
             <ul className="nav-links-list">
