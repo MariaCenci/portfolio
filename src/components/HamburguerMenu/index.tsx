@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./index.css";
+import "./hamburguer.scss";
 
 const HamburguerMenu: React.FC = () => {
     //setMenu to true or false according to opened or closed

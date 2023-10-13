@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import About from "./routes/Home/index.tsx";
-import Projects from "./routes/Projects.tsx";
+import Projects from "./routes/Projects/index.tsx";
 import Home from "./routes/Home"
-import ErrorPage from './routes/ErrorPage.tsx'
-import './main.css'
+import ErrorPage from './routes/ErrorPage/index.tsx'
+import './Styles/main.scss'
 
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";

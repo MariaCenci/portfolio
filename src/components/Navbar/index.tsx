@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HamburguerMenu from "../HamburguerMenu";
-import "./index.css";
+import "./nav.scss";
 
 const Navbar: React.FC = () => {
 

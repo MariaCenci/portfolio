@@ -1,11 +1,11 @@
 
-
+@import "../../Styles/variables";
 
 .hamburguer-icon{
     position: absolute;
     width: 15px;
     height: 1.8px;
-    background-color: var(--hamburguer-icon-color);
+    background-color: $hamburguer-icon-color;
 transition: 0.5s;
 border-radius: 15px;
 position: absolute;
@@ -23,7 +23,7 @@ position: absolute;
 width: 20px;
 height: 1.8px;
 border-radius: 15px;
-background-color: var(--hamburguer-icon-color);
+background-color: $hamburguer-icon-color;
 }
 
 
@@ -35,7 +35,7 @@ background-color: var(--hamburguer-icon-color);
     width: 20px;
     height: 1.8px;
     border-radius: 15px;
-    background-color: var(--hamburguer-icon-color);
+    background-color: $hamburguer-icon-color;
     }
     
 
@@ -77,7 +77,7 @@ align-items: center;
 color: black;
 margin-bottom: 50px;
 font-size: 1.2em;
-font-family: var(--font-body);
+font-family: $font-body;
 
 }
 
@@ -88,7 +88,7 @@ font-family: var(--font-body);
 
 .toggleActive .hamburguer-icon::after{
     top: 0;
-    background: var(--hamburguer-icon-color);
+    background: $hamburguer-icon-color;
     transform: rotate(225deg);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -98,7 +98,7 @@ z-index: 10;
 
 .toggleActive .hamburguer-icon::before{
     top: 0;
-    background: var(--hamburguer-icon-color);
+    background: $hamburguer-icon-color;
     transform: rotate(135deg);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     position: absolute;

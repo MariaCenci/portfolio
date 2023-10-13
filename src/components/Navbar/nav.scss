@@ -1,6 +1,8 @@
+@import "../../Styles/variables";
+
 .logo {
-  font-family: var(--font-logo);
-  font-size: var(--font-size-logo-M);
+  font-family: $font-logo;
+  font-size: $font-size-logo-M;
   margin-left: 17px;
   font-weight: 600;
 }
@@ -23,7 +25,7 @@
   }
 
   .logo {
-    font-family: var(--font-logo);
+    font-family: $font-logo;
     font-size: 1.1em;
     margin-left: 10px;
   }
@@ -32,7 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: var(--font-logo);
+    font-family: $font-logo;
   }
 
   .navbar-links ul {
@@ -50,7 +52,7 @@
   }
 
   .navbar-links li a {
-    color: var(--color-text);
+    color: $color-text;
     text-decoration: none;
   }
 }

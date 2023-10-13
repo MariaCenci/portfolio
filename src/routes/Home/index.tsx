@@ -1,5 +1,5 @@
-import "./index.css";
-// test new branch
+import "./home.scss";
+
 
 
 const Home: React.FC = () => {
