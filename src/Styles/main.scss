@@ -8,5 +8,9 @@
 
 
 body{
-font-family: $font-body;
+font-family: map-get($global-fonts, font-body);
 }
+
+
+
+

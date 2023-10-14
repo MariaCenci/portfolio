@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./hamburguer.scss";
 
 const HamburguerMenu: React.FC = () => {
+const body  = document.querySelector('body') as HTMLElement
     //setMenu to true or false according to opened or closed
   const [activeMenu, setActiveMenu] = useState(false);
 
@@ -14,6 +15,13 @@ const HamburguerMenu: React.FC = () => {
   //closes menu when a link is clicked
   const closeMenu = () => {
 setActiveMenu(false)
+  }
+
+  // disactivate scroll bar opened menu 
+  if(activeMenu){
+    body.style.overflow = 'hidden'
+  } else{
+    body.style.overflow = 'auto'
   }
 
   return (

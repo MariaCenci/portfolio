@@ -1,24 +1,20 @@
-
+@import "../../Styles/mixins.scss";
+@import "../../Styles/variables.scss";
 
 #home.hero {
   display: flex;
   flex-direction: column;
 
-background-color: var(--bg-hero);
-height: 100vh;
-
+  background-color: map-get($colors, bg-home);
 }
 
-.container-hero{
+.container-hero {
   padding: 0 20px;
 }
 
-.content-hero{
-  display: flex;
+.content-hero {
+  @include flex-center;
   flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-img {
@@ -36,7 +32,6 @@ height: 100vh;
   width: 100%;
 }
 
-
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -44,39 +39,83 @@ height: 100vh;
   align-items: center;
 }
 
-.hero-text h1{
-display: flex;
+.hero-text h1 {
+  display: flex;
 
   font-weight: bold;
-  font-size: var(--font-size-h1-hero-M);
+  font-size: map-get(map-get($mobile, font-size), h1-hero);
 }
 
-
-.hero-text p{
+.hero-text p {
   display: flex;
 
-  font-size: var(--font-size-body-M);
-  color: var(--font-color-body);
-text-align: center;
-padding: 0 10px;
+  font-size: map-get(map-get($mobile, font-size), body);
+  color: map-get($colors, font-color-body);
+  text-align: center;
+  padding: 0 10px;
 }
 
-img.hand-icon{
- width: 10%;
- height: 10%;
+img.hand-icon {
+  width: 10%;
+  height: 10%;
 }
 
-span.social-icons{
-  display: flex;
+span.social-icons {
+  @include flex-center;
   gap: 20px;
-  align-items: center;
-  justify-content: center;
 
-margin-top: 20px;
-
+  margin-top: 20px;
 }
 
-span.social-icons img{
-width: 38px
+span.social-icons img {
+  width: 38px;
+}
 
+/**tech stack**/
+
+.tech-stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 70px 0;
+
+  p {
+    margin-bottom: 40px;
+    font-size: map-get(map-get($mobile, font-size), subtitle);
+    
+  }
+
+  .icons-stack {
+    @include flex-center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 0 70px;
+    gap: 20px;
+  }
+
+  span img {
+    width: 55px;
+    z-index: 1;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  span {
+    animation: pulse 5s infinite;
+    transform-origin: center;
+  
+  }
 }
