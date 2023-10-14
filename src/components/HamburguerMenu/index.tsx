@@ -37,8 +37,11 @@ setActiveMenu(false)
         {activeMenu && (
           <div className="menu-list">
             <ul className="list-pages">
+            <li>
+                <Link to="/" onClick={closeMenu} >Home</Link>
+              </li>
               <li>
-                <Link to="/" onClick={closeMenu}>About</Link >
+                <Link to="/about" onClick={closeMenu}>About</Link >
               </li>
               <li>
                 <Link to="/projects" onClick={closeMenu}>Projects</Link>
