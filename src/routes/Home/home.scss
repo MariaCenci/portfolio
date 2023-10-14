@@ -80,11 +80,22 @@ span.social-icons img {
 
   margin: 70px 0;
 
+  .underline{
+    background-color: map-get($colors, separator-line );
+    width: 8em;
+    border-radius: 10px;
+height: 1.5px;
+margin-bottom: 20px;
+@include flex-center;
+
+  }
+
   p {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: map-get(map-get($mobile, font-size), subtitle);
     
   }
+
 
   .icons-stack {
     @include flex-center;
@@ -92,7 +103,7 @@ span.social-icons img {
     flex-wrap: wrap;
 
     width: 100%;
-    padding: 0 70px;
+    padding: 20px 70px;
     gap: 20px;
   }
 
@@ -114,7 +125,7 @@ span.social-icons img {
   }
 
   span {
-    animation: pulse 5s infinite;
+    animation: pulse 4s infinite;
     transform-origin: center;
   
   }

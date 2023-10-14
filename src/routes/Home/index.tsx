@@ -36,6 +36,7 @@ const Home: React.FC = () => {
 
               <div className="tech-stack">
                 <p>Tech Stack</p>
+               <div className="underline"></div>
                
               <div className="icons-stack">
                     <span>
