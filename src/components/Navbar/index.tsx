@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 import HamburguerMenu from "../HamburguerMenu";
 import "./nav.scss";
@@ -30,14 +30,17 @@ const Navbar: React.FC = () => {
               {screenWidth <= 768 && <HamburguerMenu />}
            
             <ul className="nav-links-list">
-              <li>
-                <Link to="/">About</Link>
+            <li>
+                <Link to="home"  smooth={true} duration={500} >Home</Link>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <Link to="about"  smooth={true} duration={500} >About</Link >
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="projects" smooth={true} duration={500} >Projects</Link>
+              </li>
+              <li>
+                <Link to="contact"  smooth={true} duration={500} >Contact</Link>
               </li>
             </ul>
           </div>

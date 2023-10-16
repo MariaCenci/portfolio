@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import {Link} from "react-scroll";
 import "./hamburguer.scss";
 
 const HamburguerMenu: React.FC = () => {
@@ -38,16 +39,16 @@ setActiveMenu(false)
           <div className="menu-list">
             <ul className="list-pages">
             <li>
-                <Link to="/" onClick={closeMenu} >Home</Link>
+                <Link to="home"  smooth={true} duration={500}  onClick={closeMenu} >Home</Link>
               </li>
               <li>
-                <Link to="/about" onClick={closeMenu}>About</Link >
+                <Link to="about"  smooth={true} duration={500}  onClick={closeMenu}>About</Link >
               </li>
               <li>
-                <Link to="/projects" onClick={closeMenu}>Projects</Link>
+                <Link to="projects" smooth={true} duration={500} onClick={closeMenu}>Projects</Link>
               </li>
               <li>
-                <Link to="/contact" onClick={closeMenu} >Contact</Link>
+                <Link to="contact"  smooth={true} duration={500}  onClick={closeMenu} >Contact</Link>
               </li>
             </ul>
           </div>

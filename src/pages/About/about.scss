@@ -1,0 +1,41 @@
+@import "../../Styles/mixins.scss";
+@import "../../Styles/variables.scss";
+
+.container-about {
+  @include flex-center;
+
+  padding: 60px 20px;
+}
+
+.content-about {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+
+  .text-about {
+    @include flex-center;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 30px;
+      font-size: map-get(map-get($mobile, font-size), subtitle);
+      color: map-get(map-get($colors, color), subtitle);
+      text-transform: uppercase;
+    }
+
+    p {
+      text-align: center;
+      font-size: map-get(map-get($mobile, font-size), body);
+    }
+  }
+}
+
+.img-about {
+  width: 90%;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
