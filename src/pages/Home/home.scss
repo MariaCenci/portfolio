@@ -43,7 +43,7 @@
   display: flex;
 
   font-weight: bold;
-  font-size: map-get(map-get($mobile, font-size), h1-hero);
+  font-size: map-get(map-get($mobile, font-size), title1);
   color: map-get($colors, color-primary)
 }
 

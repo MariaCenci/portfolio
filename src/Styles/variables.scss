@@ -8,6 +8,7 @@ $colors: (
   color-primary: black,
   color-secondary: white,
   color-tertiary: rgb(75, 74, 74),
+  color-dark-gray: rgb(45, 45, 45),
   bg-section: rgba(246, 246, 246, 0.851),
  separator-line: rgba(133, 133, 133, 0.677),
  
@@ -23,8 +24,9 @@ body: rgb(120, 120, 120),
 $mobile: (
   font-size: (
     body: 1em,
-    logo: 1.2em,
-    h1-hero: 1.7em,
+    logo: 1.1em,
+    title1: 1.7em,
+    title2: 1.2em,
     subtitle: 1.1em,
     project-title: 1.2em,
   ),
