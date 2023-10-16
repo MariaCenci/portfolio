@@ -1,0 +1,23 @@
+@import "../../Styles/mixins.scss";
+@import "../../Styles/variables.scss";
+
+.container-projects{
+    @include flex-center;
+    @include container-wrapper-mobile();
+    background-color: map-get($colors, bg-section);
+    
+
+.content-projects{
+@include flex-center;
+flex-direction: column;
+
+
+h3{
+  @include subtitle;
+}
+
+
+}
+
+
+}

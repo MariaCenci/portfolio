@@ -12,12 +12,8 @@ const Home: React.FC = () => {
 
             <div className="hero-text">
               <h1>
-                Front-End Developer
-                <img
-                  className="hand-icon"
-                  src="src/icons/waving-hand.png"
-                  alt=""
-                />
+                Front-End Developer👩‍💻
+          
               </h1>
 
               <p>
@@ -27,7 +23,7 @@ const Home: React.FC = () => {
 
               <span className="social-icons">
                 <a href="https://github.com/MariaCenci">
-                  <img src="src/icons/github-icon.svg" alt="" />
+                  <img src="src/icons/github.svg" alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/maria-fernanda-cenci-23a909276/">
                   <img src="src/icons/linkedin-icon.svg" alt="" />

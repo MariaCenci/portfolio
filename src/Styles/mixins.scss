@@ -1,8 +1,18 @@
-
+@import "./variables.scss";
 
 @mixin flex-center(){
 display: flex;
 justify-content: center;
 align-items: center;
 
+}
+
+@mixin subtitle(){
+    font-size: map-get(map-get($mobile, font-size), subtitle);
+    color: map-get(map-get($colors, color), subtitle);
+    text-transform: uppercase;
+}
+
+@mixin container-wrapper-mobile(){
+    padding: 90px 20px;
 }

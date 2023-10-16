@@ -1,0 +1,67 @@
+@import "../../Styles/mixins.scss";
+@import "../../Styles/variables.scss";
+
+.project-card {
+  @include flex-center;
+  flex-direction: column;
+  background-color: map-get($colors, color-secondary);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.472);
+  gap: 40px;
+
+  .project {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .project-description {
+    @include flex-center;
+    flex-direction: column;
+
+h3.title-project{
+font-size: map-get(map-get($mobile, font-size),project-title);
+color: map-get($colors, color-tertiary);
+text-transform: none;
+margin-bottom: 20px;
+}
+
+
+    p {
+      text-align: center;
+     
+
+    }
+  }
+
+  .see-project {
+    @include flex-center;
+
+    .link-project {
+      @include flex-center;
+    }
+
+    span {
+      @include flex-center;
+      justify-content: space-between;
+      gap: 4px;
+      margin: 0 15px;
+
+      p {
+        color: map-get($colors, color-tertiary);
+      }
+
+      img.github {
+        width: 1.3em;
+      }
+      img.demo {
+        width: 1.7em;
+      }
+    }
+  }
+}

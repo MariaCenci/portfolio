@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
 
-  background-color: map-get($colors, bg-home);
+  background-color: map-get($colors, bg-section);
 }
 
 .container-hero {
@@ -44,6 +44,7 @@
 
   font-weight: bold;
   font-size: map-get(map-get($mobile, font-size), h1-hero);
+  color: map-get($colors, color-primary)
 }
 
 .hero-text p {
@@ -82,7 +83,7 @@ span.social-icons img {
 
   .underline{
     background-color: map-get($colors, separator-line );
-    width: 8em;
+    width: 6em;
     border-radius: 10px;
 height: 1.5px;
 margin-bottom: 20px;
@@ -93,7 +94,7 @@ margin-bottom: 20px;
   p {
     margin-bottom: 10px;
     font-size: map-get(map-get($mobile, font-size), subtitle);
-    
+    color: map-get($colors, color-tertiary);
   }
 
 

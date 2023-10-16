@@ -1,11 +1,6 @@
 @import "../../Styles/variables";
 
-.logo {
-  font-family: map-get($global-fonts, font-logo);
-  font-size: map-get(map-get($mobile,font-size),logo);
-  margin-left: 17px;
-  font-weight: 600;
-}
+
 
 .nav-links-list {
   display: none;
