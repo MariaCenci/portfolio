@@ -33,8 +33,9 @@ margin-bottom: 20px;
 
 
     p {
+      font-size: map-get(map-get($mobile, font-size), body);
       text-align: center;
-     
+      padding: 0 4em;
 
     }
   }
@@ -54,6 +55,7 @@ margin-bottom: 20px;
 
       p {
         color: map-get($colors, color-tertiary);
+        
       }
 
       img.github {
@@ -64,4 +66,18 @@ margin-bottom: 20px;
       }
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+.project-card{
+   .project-description {
+
+p{
+  font-size: map-get(map-get($tablet, font-size), body);
+}
+  }
+
+
+}
+ 
 }

@@ -22,11 +22,24 @@ body: rgb(120, 120, 120),
 
 $mobile: (
   font-size: (
-    body: 1em,
-    logo: 1.1em,
-    title1: 1.7em,
+    body: 1.1em,
+    logo: 1.2em,
+    title1: 2.8em,
     title2: 1.2em,
+    title3: 1.8em, 
     subtitle: 1.1em,
     project-title: 1.2em,
   ),
 );
+
+$tablet:(
+font-size:(
+body: 1.2em,
+title1: 3em,
+title3: 2.1em,
+subtitle: 1.2em,
+
+)
+
+
+)

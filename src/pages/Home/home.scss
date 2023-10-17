@@ -9,7 +9,9 @@
 }
 
 .container-hero {
-  padding: 0 20px;
+  padding: 0 1.5em;
+  margin: 0 auto;
+  max-width: 110em;
 }
 
 .content-hero {
@@ -23,7 +25,7 @@
 
   width: 60%;
 
-  margin: 140px 0 60px 0;
+  margin: 10em 0 3.5em 0;
 }
 
 .hero-img img {
@@ -41,7 +43,7 @@
 
 .hero-text h1 {
   display: flex;
-
+  text-align: center;
   font-weight: bold;
   font-size: map-get(map-get($mobile, font-size), title1);
   color: map-get($colors, color-primary);
@@ -53,7 +55,7 @@
   font-size: map-get(map-get($mobile, font-size), body);
   color: map-get($colors, font-color-body);
   text-align: center;
-  padding: 0 10px;
+  padding: 0 3.5em;
 }
 
 img.hand-icon {
@@ -65,7 +67,7 @@ span.social-icons {
   @include flex-center;
   gap: 20px;
 
-  margin-top: 20px;
+  margin-top: 1.2em;
 }
 
 span.social-icons img {
@@ -108,8 +110,6 @@ span.social-icons img {
 
   span img {
     width: 55px;
-    
- 
   }
 
   @keyframes pulse {
@@ -127,5 +127,24 @@ span.social-icons img {
   span {
     animation: pulse 3s infinite;
     transform-origin: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .container-hero {
+    @include wrapper-medium-screen;
+    margin: 0 auto;
+    max-width: 120rem;
+
+    .hero-text {
+      h1 {
+        font-size: map-get(map-get($tablet, font-size), title1);
+      }
+
+      p {
+        font-size: map-get(map-get($tablet, font-size), body);
+        padding: 0 4em;
+      }
+    }
   }
 }

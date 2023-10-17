@@ -15,14 +15,16 @@ height: 9vh;
 width: 100%;
 box-shadow: 1px 1px 15px rgba(73, 73, 73, 0.345);
 border: rgba(144, 143, 143, 0.981);
-
+padding: 0 30px;
 
 .logo {
     font-family: map-get($global-fonts, font-logo);
     font-size: map-get(map-get($mobile,font-size), logo);
     color: map-get($colors, color-primary);
-    margin-left: 24px;
+    margin-left: .5em;
     font-weight: 600;
   }
 
 }
+
+/***TABLET****/

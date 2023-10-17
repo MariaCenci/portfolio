@@ -6,6 +6,8 @@ const Home: React.FC = () => {
       <section id="home" className="hero">
         <div className="container-hero">
           <div className="content-hero">
+            <div className="main-hero">
+  </div>
             <div className="hero-img">
               <img src="src/images/myPhoto.png" alt="" />
             </div>
@@ -29,7 +31,8 @@ const Home: React.FC = () => {
                   <img src="src/icons/linkedin-icon.svg" alt="" />
                 </a>
               </span>
-
+              </div>
+          
               <div className="tech-stack">
                 <p>Tech Stack</p>
                <div className="underline"></div>
@@ -53,7 +56,7 @@ const Home: React.FC = () => {
                   <span>
                     <img src="src/icons/ts.svg" alt="" />
                   </span>
-              </div>
+           
               </div>
             </div>
           </div>

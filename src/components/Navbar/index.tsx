@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
          
         <div className="navbar-links ">
            {/*activates hamburguer menu for mobile */}
-              {screenWidth <= 768 && <HamburguerMenu />}
+              {screenWidth <= 899 && <HamburguerMenu />}
            
             <ul className="nav-links-list">
             <li>

@@ -7,12 +7,23 @@ align-items: center;
 
 }
 
-@mixin subtitle(){
+@mixin subtitle-mobile(){
     font-size: map-get(map-get($mobile, font-size), subtitle);
+    color: map-get($colors, color-blue);
+    text-transform: uppercase;
+}
+
+
+@mixin subtitle-medium-screen(){
+    font-size: map-get(map-get($tablet, font-size), subtitle);
     color: map-get($colors, color-blue);
     text-transform: uppercase;
 }
 
 @mixin container-wrapper-mobile(){
     padding: 80px 20px;
+}
+
+@mixin wrapper-medium-screen(){
+    padding: 4em 7em;
 }
