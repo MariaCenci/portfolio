@@ -13,6 +13,13 @@
 
 h3{
 color: map-get($colors, color-secondary);
+font-size: map-get(map-get($mobile, font-size), body);
+    }
+
+    span{
+        img{
+            width: 2.2em;
+        }
     }
 
     }
