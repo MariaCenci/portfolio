@@ -7,17 +7,25 @@ const Contact: React.FC = () => {
     <section className='contact'>
 <div className='container-contact'>
 <div className='content-contact'>
-<h3>Contact</h3>
+
+  <div className='contact-text'>
+    <h3>Contact</h3>
 
 <h2>Hit me up! 🙂</h2>
+  </div>
+
 
 <div className='contact-link'>
-  <a href='mailto: mariafcenci@gmail.com' >
+  <div className='contact-icon'>
+     <a href='mailto: mariafcenci@gmail.com' >
   <img src="src/icons/email-blue.png" alt="" />
-  </a>
-  <h4>Mail</h4>
+  </a></div>
+ <div className='contact-infos'>
+    <h4>Mail</h4>
   <p>mariafcenci@gmail.com</p>
   
+ </div>
+
 </div>
 
 
