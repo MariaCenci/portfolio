@@ -35,16 +35,19 @@ margin-bottom: 20px;
     p {
       font-size: map-get(map-get($mobile, font-size), body);
       text-align: center;
-      padding: 0 4em;
+   
 
     }
   }
 
   .see-project {
     @include flex-center;
+    margin-top: 3em;
 
     .link-project {
       @include flex-center;
+
+
     }
 
     span {
@@ -54,11 +57,12 @@ margin-bottom: 20px;
       margin: 0 15px;
 
       p {
-        color: map-get($colors, color-tertiary);
-        
+        color: map-get($colors, color-primary);
+      
       }
 
       img.github {
+        
         width: 1.3em;
       }
       img.demo {
@@ -68,7 +72,7 @@ margin-bottom: 20px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 899px) {
+@media (min-width: 768px) and (max-width: 1020px) {
 .project-card{
    .project-description {
 
@@ -80,4 +84,41 @@ p{
 
 }
  
+}
+
+@media screen and (min-width: 1021px) {
+  .project-card {
+display: flex;
+flex-direction: row;
+
+
+.project{
+ 
+width: 100%;
+
+  img{
+      height: 50vh;
+  }
+}
+
+.project-description{
+width: 70%;
+
+
+
+
+}
+
+
+
+
+
+  }
+
+
+
+
+
+
+
 }

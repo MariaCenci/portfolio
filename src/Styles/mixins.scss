@@ -14,17 +14,6 @@ align-items: center;
 }
 
 
-@mixin subtitle-medium-screen(){
-    font-size: map-get(map-get($tablet, font-size), subtitle);
-    color: map-get($colors, color-blue);
-    text-transform: uppercase;
-}
-
-@mixin subtitle-big-screen(){
-    font-size: map-get(map-get($desktop, font-size), subtitle);
-    color: map-get($colors, color-blue);
-    text-transform: uppercase;
-}
 
 @mixin subtitle-about-mobile(){
     color: map-get($colors, color-primary );
@@ -55,9 +44,9 @@ align-items: center;
 }
 
 @mixin container-wrapper-mobile(){
-    padding: 80px 20px;
+    padding: 6em 1.4em;
 }
 
 @mixin wrapper-medium-screen(){
-    padding: 5em 8em;
+    padding: 6em 10em;
 }

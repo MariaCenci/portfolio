@@ -1,27 +1,43 @@
 @import "../../Styles/mixins.scss";
 @import "../../Styles/variables.scss";
 
+.container-footer {
+  @include flex-center;
+  padding: 3em 2em;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 28, 74, 1) 4%,
+    rgba(9, 77, 154, 1) 100%
+  );
 
-
-.container-footer{
+  .content-footer {
     @include flex-center;
-    padding: 50px 20px;
-    background: linear-gradient(180deg, rgba(0,28,74,1) 4%, rgba(9,77,154,1) 100%);
-
-
-    .content-footer{
-
-h3{
-color: map-get($colors, color-secondary);
-font-size: map-get(map-get($mobile, font-size), body);
+    gap: 1em;
+    flex-direction: column;
+    h3 {
+      color: map-get($colors, color-secondary);
+      font-size: map-get(map-get($mobile, font-size), body);
     }
 
-    span{
-        img{
-            width: 2.2em;
-        }
+    span {
+      @include flex-center;
+      img {
+        width: 2.2em;
+      }
     }
+  }
+}
 
+@media screen and (min-width: 1021px) {
+  .container-footer {
+    .content-footer {
+      display: flex;
+      gap: 1.5em;
+      justify-content: space-around;
+      flex-direction: row;
     }
-    
+    span.social-icons {
+      gap: 0.5em;
+    }
+  }
 }

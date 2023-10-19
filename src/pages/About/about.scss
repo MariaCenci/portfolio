@@ -18,14 +18,12 @@
     flex-direction: column;
 
     h3 {
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
       @include subtitle-mobile;
     }
 
-
-    h2{
+    h2 {
       @include subtitle-about-mobile;
-      
     }
 
     p {
@@ -45,94 +43,69 @@
   }
 }
 
-
-
 /***TABLET****/
 @media (min-width: 768px) and (max-width: 1020px) {
+  #about {
+    .container-about {
+      @include wrapper-medium-screen();
+      margin: 0 auto;
 
-#about{
+      .text-about {
+     
 
-  .container-about {
-  
-    @include wrapper-medium-screen();
-margin: 0 auto;
+        h2 {
+          @include subtitle-about-tablet;
+        }
 
-    .text-about {
-
-      h3{
-       @include subtitle-medium-screen;
-      
+        p {
+          font-size: map-get(map-get($tablet, font-size), body);
+        }
+      }
     }
-
-    h2{
-      @include subtitle-about-tablet;
-      
-    }
-
-    p{
-      font-size: map-get(map-get($tablet, font-size), body);
-    }
-
   }
-  
-
-  }  
 }
-}
-
 
 @media screen and (min-width: 1021px) {
+  #about {
+    padding: 10em 0;
 
-#about{
- 
-padding: 10em 0;
+    .container-about {
+      padding: 0 6em;
+      margin: 0 auto;
+      max-width: 107em;
 
-  .container-about{
-padding: 0 6em;
-   margin: 0 auto;
-    max-width: 107em;
-    
-    
-    
-    .content-about{
-      display: grid;
-align-items: center;
-justify-content: center;
-  grid-template-columns: 1fr 1fr;
-    gap: .2em;
-    
-   
-    .img-about{
-      width: 80%;
+      .content-about {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.2em;
+
+        .img-about {
+          width: 80%;
+        }
+
+        .text-about {
+          width: 90%;
+
+          h3 {
+            
+            width: 100%;
+            text-align: start;
+          }
+
+          h2 {
+            @include subtitle-about-desktop;
+            text-align: start;
+          }
+
+          p {
+            font-size: map-get(map-get($desktop, font-size), body);
+            padding: 0;
+            text-align: start;
+          }
+        }
+      }
     }
-    
-    .text-about{
-      width: 90%;
-    
-      h3{
-        @include subtitle-big-screen;
-    width: 100%;
-        text-align: start;  
-      }
-    
-      h2{
-       @include subtitle-about-desktop;
-       text-align: start;  
-      }
-    
-        p{
-          font-size: map-get(map-get($desktop, font-size), body);
-         padding: 0 ;
-      text-align: start;  
-      
-    
-      }
-    
-    
-    }
-    
-    }
-    
-      }
-}
+  }
 }

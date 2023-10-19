@@ -3,7 +3,7 @@
 
 .container-projects {
   @include flex-center;
-  @include container-wrapper-mobile();
+  @include container-wrapper-mobile;
   background-color: map-get($colors, bg-section);
 
   .content-projects {
@@ -12,27 +12,29 @@
 
     h3 {
       @include subtitle-mobile;
-      margin-bottom: 25px;
+      margin-bottom: 3em;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 899px) {
+@media (min-width: 768px) and (max-width: 1020px) {
   .container-projects {
     @include wrapper-medium-screen;
 
+    
+  }
+}
 
+@media screen and (min-width: 1021px) {
+  #projects {
+    .container-projects {
+      padding: 10em 0;
 
-    .content-projects {
-
-      h3{
-        @include subtitle-medium-screen;
+      .content-projects {
+        padding: 0 6em;
+        margin: 0 auto;
+        max-width: 107em;
       }
-
-
     }
   }
-
-
-
 }

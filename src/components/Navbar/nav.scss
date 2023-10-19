@@ -27,8 +27,8 @@
   }
 
   .logo {
-    font-family: map-get(map-get($mobile, font-size), logo );
-    font-size: 1.1em;
+    
+    font-size: map-get(map-get($mobile, font-size), logo );
     margin-left: 10px;
   }
 
@@ -50,11 +50,13 @@
   .navbar-links li {
     display: flex;
     margin-right: 30px;
-    font-size: 1em;
+    font-size: map-get(map-get($desktop, font-size), body);
+    
   }
 
   .navbar-links li a {
     color: map-get($colors, color-primary);
     text-decoration: none;
+    font-weight: 600;
   }
 }

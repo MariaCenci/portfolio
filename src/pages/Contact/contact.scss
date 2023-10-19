@@ -41,9 +41,7 @@
 @media (min-width: 768px) and (max-width: 899px) {
   .container-contact {
     .content-contact {
-      h3 {
-        @include subtitle-medium-screen;
-      }
+     
 
       h2{
         font-size: map-get(map-get($tablet, font-size), title3);
