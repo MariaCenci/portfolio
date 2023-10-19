@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   </a></div>
  <div className='contact-infos'>
     <h4>Mail</h4>
-  <p>mariafcenci@gmail.com</p>
+    <a href='mailto: mariafcenci@gmail.com' ><p>mariafcenci@gmail.com</p> </a>
   
  </div>
 

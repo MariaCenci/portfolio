@@ -38,6 +38,12 @@
     }
     span.social-icons {
       gap: 0.5em;
+
+img:hover{
+    @include hover-icons-footer;
+}
+
+
     }
   }
 }

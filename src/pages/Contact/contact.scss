@@ -79,6 +79,16 @@ gap: 1em;
     display: flex;
     flex-direction: column;
     text-align: start;
+
+
+a{
+    text-decoration: none;
+    color: map-get(map-get($colors, color), body)
+}
+   a p:hover{
+    @include hover-links;
+}
+
 }
 
 
