@@ -13,13 +13,13 @@ const About: React.FC = () => {
 
           <div className="text-about">
     <h3>About me</h3>
-   
+   <h2>Passionate Junior Front-End Developer in Bergamo, Italy🌐</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Perspiciatis nisi libero, nesciunt nam corrupti veniam beatae
             distinctio perferendis, voluptate accusamus est, eveniet recusandae?
             Debitis reiciendis natus consectetur, pariatur exercitationem
-            perferendis.
+            perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo ratione fugit dolorem pariatur aliquid, aliquam corrupti doloremque! Explicabo fugit ad id!
           </p>
         </div>
         </div>

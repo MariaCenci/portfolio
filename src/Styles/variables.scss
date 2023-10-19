@@ -26,27 +26,29 @@ $mobile: (
     title2: 1.2em,
     title3: 1.8em,
     subtitle: 1.1em,
+    subtitle-about: 1.3em,
     project-title: 1.2em,
   ),
 );
 
 $tablet: (
   font-size: (
-    body: 1.2em,
+    body: 1.1em,
     title1: 3em,
     title3: 2.1em,
     subtitle: 1.2em,
+    subtitle-about: 1.5em,
   ),
 );
 
 
 $desktop:(
 font-size:(
-  body: 1.2em,
-  title1: 3.7em,
+  body: 1.1em,
+  title1: 3.5em,
   title3: 2.1em,
   subtitle: 1.2em,
-
+subtitle-about: 1.6em,
 ),
 
 )

@@ -185,14 +185,15 @@ span.social-icons img {
           }
 
           span.social-icons img {
-            width: 2.5em;
+            width: 2.3em;
           }
         }
 
         .hero-img {
           order: 2;
           @include flex-center;
-          width: 35%;
+          width: 40%;
+          margin: 0;
 
           img {
             width: 100%;
@@ -202,7 +203,8 @@ span.social-icons img {
     }
 
 .tech-stack{
-@include flex-center;
+display: flex;
+align-items: center;
 flex-direction: row;
 padding: 1em 0 1em 0;
 margin: .5em 0 1em 0;
