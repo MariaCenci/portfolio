@@ -42,18 +42,25 @@
 
 @mixin hover-links() {
   color: map-get($colors, color-hover);
-  transition: 0.9s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
 @mixin hover-icons-home(){
 color: map-get($colors, color-hover);
 transform: scale(1.1);
-transition: .4s;
+transition: .3s;
 }
 
 @mixin hover-icons-footer(){
 transform: translateY(-5px);
-transition: .6s;
+transition: .5s;
+
+}
+
+@mixin hover-icons-stack(){
+    transform: translateY(-10px);
+
+    transition: .4s;
 
 }

@@ -106,28 +106,18 @@
     width: 100%;
     padding: 20px 70px;
     gap: 20px;
-  }
+  
 
   span img {
-    width: 3.5em;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(57, 57, 57, 0.822);
+    background-color: map-get($colors, bg-section );
   }
 
-  @keyframes pulse {
-    0% {
-      transform: scale(0.8);
-    }
-    50% {
-      transform: scale(0.9);
-    }
-    100% {
-      transform: scale(0.8);
-    }
-  }
 
-  span {
-    animation: pulse 3s infinite;
-    transform-origin: center;
-  }
+}
 }
 }
 
@@ -242,6 +232,12 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: start;
+
+        img:hover {
+          cursor: pointer;
+          @include hover-icons-stack;
+        }
+
       }
     }
   }

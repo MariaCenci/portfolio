@@ -39,22 +39,23 @@ const Home: React.FC = () => {
 
               <div className="icons-stack">
                 <span>
-                  <img src="src/icons/html.svg" alt="" />
+                  <img src="src/images/html.png" alt="" />
                 </span>
                 <span>
-                  <img src="src/icons/css.svg" alt="" />
+                  <img src="src/images/css.png" alt="" />
                 </span>
                 <span>
-                  <img src="src/icons/sass.svg" alt="" />
+                  <img src="src/images/sass.png" alt="" />
+                </span>
+               
+                <span>
+                  <img src="src/images/js.png" alt="" />
                 </span>
                 <span>
-                  <img src="src/icons/react.svg" alt="" />
-                </span>
+                  <img src="src/images/ts.svg.png" alt="" />
+                </span> 
                 <span>
-                  <img src="src/icons/js.svg" alt="" />
-                </span>
-                <span>
-                  <img src="src/icons/ts.svg" alt="" />
+                  <img src="src/images/react.png" alt="" />
                 </span>
               </div>
             </div>
