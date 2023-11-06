@@ -10,7 +10,7 @@ const ProjectCard: React.FC = () => {
 
       <div className="project-description">
         <h3 className="title-project">Project 1</h3>
-        <p>
+        <p className="project-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
           commodi quae odio fugit possimus officiis deserunt porro esse fuga.
           Numquam perferendis accusamus id consectetur placeat ab corrupti
