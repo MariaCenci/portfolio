@@ -26,7 +26,7 @@ const Home: React.FC = () => {
               </div>
 
               <div className="hero-img">
-                <img src="src/images/myPhoto.png" alt="" />
+                <img src="src/images/myPhoto.jpg" alt="" />
               </div>
             </div>
             <div className="tech-stack">

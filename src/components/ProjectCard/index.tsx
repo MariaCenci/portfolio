@@ -5,7 +5,7 @@ const ProjectCard: React.FC = () => {
   return (
     <div className="project-card">
       <div className="project">
-        <img src="src/images/boat.jpg" alt="" />
+        <h4>Coming soon</h4>
       </div>
 
       <div className="project-description">

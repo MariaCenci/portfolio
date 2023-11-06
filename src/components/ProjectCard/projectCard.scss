@@ -10,16 +10,26 @@
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.472);
   gap: 40px;
+  height: 70vh;
 
   .project {
     width: 100%;
+    
 
+
+h4{
+ text-align: center;
+
+}
+
+    /*
     img {
       width: 100%;
       border-radius: 10px;
     }
   }
-
+*/
+  }
   .project-description {
     @include flex-center;
     flex-direction: column;
@@ -90,6 +100,7 @@ p{
   .project-card {
 display: flex;
 flex-direction: row;
+height: 50vh;
 
 
 .project{
