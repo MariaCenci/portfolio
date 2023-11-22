@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
 <div className='contact-link'>
   <div className='contact-icon'>
      <a href='mailto: mariafcenci@gmail.com' >
-  <img src="src/icons/email-blue.png" alt="" />
+  <img src="/icons/email-blue.png" alt="" />
   </a></div>
  <div className='contact-infos'>
     <h4>Mail</h4>

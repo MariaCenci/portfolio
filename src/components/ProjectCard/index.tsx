@@ -5,7 +5,7 @@ const ProjectCard: React.FC = () => {
   return (
     <div className="project-card">
       <div className="project">
-        <img src="src/images/moviesLib.png" alt="" />
+        <img src="/images/moviesLib.png" alt="" />
       </div>
 
       <div className="project-description">
@@ -18,14 +18,14 @@ const ProjectCard: React.FC = () => {
           <div className="link-project">
             <span>
               <a href="https://github.com/MariaCenci/MoviesLibrary">Code</a>
-              <img src="src/icons/github2.svg" alt="" className="github" />
+              <img src="/icons/github2.svg" alt="" className="github" />
             </span>
           </div>
 
           <div className="link-project">
             <span>
               <a href="https://movies-library-iusl92kfm-maria-cencis-projects.vercel.app/">Demo</a>
-              <img src="src/icons/eye.svg" alt="" className="demo" />
+              <img src="/icons/eye.svg" alt="" className="demo" />
             </span>
           </div>
         </div>

@@ -17,16 +17,16 @@ const Home: React.FC = () => {
 
                 <span className="social-icons">
                   <a href="https://github.com/MariaCenci" target="_blank">
-                    <img src="src/icons/github.svg" alt="" />
+                    <img src="/icons/github.svg" alt="" />
                   </a>
                   <a href="https://www.linkedin.com/in/maria-fernanda-cenci-23a909276/" target="_blank">
-                    <img src="src/icons/linkedin-icon.svg" alt="" />
+                    <img src="/icons/linkedin-icon.svg" alt="" />
                   </a>
                 </span>
               </div>
 
               <div className="hero-img">
-                <img src="src/images/myPhoto.jpg" alt="" />
+                <img src="/images/myPhoto.jpg" alt="" />
               </div>
             </div>
             <div className="tech-stack">
@@ -39,23 +39,23 @@ const Home: React.FC = () => {
 
               <div className="icons-stack">
                 <span>
-                  <img src="src/images/html.png" alt="" />
+                  <img src="/images/html.png" alt="" />
                 </span>
                 <span>
-                  <img src="src/images/css.png" alt="" />
+                  <img src="/images/css.png" alt="" />
                 </span>
                 <span>
-                  <img src="src/images/sass.png" alt="" />
+                  <img src="/images/sass.png" alt="" />
                 </span>
                
                 <span>
-                  <img src="src/images/js.png" alt="" />
+                  <img src="/images/js.png" alt="" />
                 </span>
                 <span>
-                  <img src="src/images/ts.svg.png" alt="" />
+                  <img src="/images/ts.svg.png" alt="" />
                 </span> 
                 <span>
-                  <img src="src/images/react.png" alt="" />
+                  <img src="/images/react.png" alt="" />
                 </span>
               </div>
             </div>

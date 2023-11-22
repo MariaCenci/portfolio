@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="container-about">
         <div className="content-about">
           <div className="img-about">
-            <img src="src/images/about2.png" alt="" />
+            <img src="/images/about2.png" alt="" />
           </div>
 
           <div className="text-about">
