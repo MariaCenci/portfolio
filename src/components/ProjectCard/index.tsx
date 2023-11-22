@@ -24,7 +24,7 @@ const ProjectCard: React.FC = () => {
 
           <div className="link-project">
             <span>
-              <a href="https://movies-library-iusl92kfm-maria-cencis-projects.vercel.app/">Demo</a>
+              <a href="https://movies-library-mkmzxan1s-maria-cencis-projects.vercel.app">Demo</a>
               <img src="/icons/eye.svg" alt="" className="demo" />
             </span>
           </div>
