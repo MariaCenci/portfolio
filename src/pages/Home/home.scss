@@ -33,12 +33,11 @@
             font-size: map-get(map-get($mobile, font-size), title1);
             color: map-get($colors, color-primary);
           }
-            p {
-              font-size: map-get(map-get($mobile, font-size), body);
-              color: map-get($colors, font-color-body);
-              text-align: center;
-            }
-          
+          p {
+            font-size: map-get(map-get($mobile, font-size), body);
+            color: map-get($colors, font-color-body);
+            text-align: center;
+          }
 
           span.social-icons {
             @include flex-center;
@@ -50,8 +49,7 @@
           span.social-icons img {
             width: 2.2em;
           }
-        
-      }
+        }
 
         .hero-img {
           display: flex;
@@ -67,74 +65,93 @@
             width: 100%;
           }
         }
-      
       }
-    
     }
   }
 
+  /**tech stack**/
 
-/**tech stack**/
+  .tech-stack {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-.tech-stack {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    margin: 70px 0;
 
-  margin: 70px 0;
+    .underline {
+      background-color: map-get($colors, separator-line);
+      width: 6em;
+      border-radius: 10px;
+      height: 1.5px;
+      margin-bottom: 20px;
+      @include flex-center;
+    }
 
-  .underline {
-    background-color: map-get($colors, separator-line);
-    width: 6em;
-    border-radius: 10px;
-    height: 1.5px;
-    margin-bottom: 20px;
-    @include flex-center;
+    p {
+      margin-bottom: 10px;
+      font-size: map-get(map-get($mobile, font-size), subtitle);
+      color: map-get($colors, color-tertiary);
+    }
+
+    .icons-stack {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px 40px;
+      gap: 20px;
+
+      span img {
+        width: 2.8em;
+        height: 2.8em;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(57, 57, 57, 0.822);
+        background-color: map-get($colors, bg-section);
+      }
+    }
   }
-
-  p {
-    margin-bottom: 10px;
-    font-size: map-get(map-get($mobile, font-size), subtitle);
-    color: map-get($colors, color-tertiary);
-  }
-
-  .icons-stack {
-    @include flex-center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    width: 100%;
-    padding: 20px 70px;
-    gap: 20px;
-  
-
-  span img {
-    width: 2.8em;
-    height: 2.8em;
-    border-radius: 8px;
-    box-shadow: 0 0 6px rgba(57, 57, 57, 0.822);
-    background-color: map-get($colors, bg-section );
-  }
-
-
 }
-}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  #home.hero {
+    .container-hero {
+      .content-hero {
+        .tech-stack {
+          .icons-stack {
+            grid-template-columns: repeat(6, 1fr);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
-  .container-hero {
-    @include wrapper-medium-screen;
-    margin: 0 auto;
-    max-width: 120rem;
+  #home.hero {
+    .container-hero {
+      @include wrapper-medium-screen;
+      margin: 0 auto;
+      max-width: 120rem;
+      padding: .2em 8em ;
 
-    .hero-text {
-      h1 {
-        font-size: map-get(map-get($tablet, font-size), title1);
+      .content-hero {
+        .hero-text {
+          h1 {
+            font-size: map-get(map-get($tablet, font-size), title1);
+          }
+
+          p {
+            font-size: map-get(map-get($tablet, font-size), body);
+            padding: 0 4em;
+          }
+        }
       }
-
-      p {
-        font-size: map-get(map-get($tablet, font-size), body);
-        padding: 0 4em;
+    }
+    .tech-stack {
+      .icons-stack {
+        grid-template-columns: repeat(6, 1fr);
       }
     }
   }
@@ -142,104 +159,102 @@
 
 @media screen and (min-width: 900px) {
   #home.hero {
-  .container-hero {
-    @include flex-center;
-    flex-direction: row;
-    padding: 12em 4.5em;
-    margin: 0 auto;
-    max-width: 80em;
-    .content-hero {
+    .container-hero {
       @include flex-center;
-
-      .main-hero {
-        @include flex-center;
-        flex-direction: row;
-
-        max-width: 100em;
-
-        gap: 6em;
-
-        .hero-text {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          width: 40%;
-
-          h1 {
-            text-align: left;
-            padding: 0;
-
-            font-size: map-get(map-get($desktop, font-size), title1);
-            color: map-get($colors, color-primary);
-          }
-          p {
-            text-align: left;
-            padding: 0;
-            font-size: map-get(map-get($desktop, font-size), body);
-          }
-
-          span.social-icons img {
-            width: 2.3em;
-
-          }
-
-          span.social-icons img:hover {
-@include hover-icons-home;
-          }
-        }
-
-        .hero-img {
-          order: 2;
-          @include flex-center;
-          width: 40%;
-          margin: 0;
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-
-    .tech-stack {
-      display: flex;
-      align-items: center;
       flex-direction: row;
-      padding: 1em 0 1em 0;
-      margin: 3em 0 1em 0;
-      width: 90%;
-
-      .text-stack {
+      padding: 12em 4.5em;
+      margin: 0 auto;
+      max-width: 80em;
+      .content-hero {
         @include flex-center;
-        gap: 0.5em;
-        p {
-          @include flex-center;
-          margin: 0;
-        }
-        .underline {
-          @include flex-center;
 
-          width: 2em;
-          margin: 0;
+        .main-hero {
+          @include flex-center;
+          flex-direction: row;
 
-          transform: rotate(90deg);
+          max-width: 100em;
+
+          gap: 6em;
+
+          .hero-text {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 40%;
+
+            h1 {
+              text-align: left;
+              padding: 0;
+
+              font-size: map-get(map-get($desktop, font-size), title1);
+              color: map-get($colors, color-primary);
+            }
+            p {
+              text-align: left;
+              padding: 0;
+              font-size: map-get(map-get($desktop, font-size), body);
+            }
+
+            span.social-icons img {
+              width: 2.3em;
+            }
+
+            span.social-icons img:hover {
+              @include hover-icons-home;
+            }
+          }
+
+          .hero-img {
+            order: 2;
+            @include flex-center;
+            width: 40%;
+            margin: 0;
+
+            img {
+              width: 100%;
+            }
+          }
         }
       }
 
-      .icons-stack {
-        @include flex-center;
-        width: 80%;
+      .tech-stack {
+        display: flex;
+        align-items: center;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: start;
+        padding: 1em 0 1em 0;
+        margin: 3em 0 1em 0;
+        width: 90%;
 
-        img:hover {
-          cursor: pointer;
-          @include hover-icons-stack;
+        .text-stack {
+          @include flex-center;
+          gap: 0.5em;
+          p {
+            @include flex-center;
+            margin: 0;
+          }
+          .underline {
+            @include flex-center;
+
+            width: 2em;
+            margin: 0;
+
+            transform: rotate(90deg);
+          }
         }
 
+        .icons-stack {
+          @include flex-center;
+          width: 80%;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: start;
+
+          img:hover {
+            cursor: pointer;
+            @include hover-icons-stack;
+          }
+        }
       }
     }
   }
-}
 }

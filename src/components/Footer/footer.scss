@@ -12,7 +12,7 @@
 
   .content-footer {
     @include flex-center;
-    gap: 1em;
+    gap: 1.2em;
     flex-direction: column;
     h3 {
       color: map-get($colors, color-secondary);
@@ -21,8 +21,10 @@
 
     span {
       @include flex-center;
+      gap: 14px;
       img {
         width: 2.2em;
+       
       }
     }
   }

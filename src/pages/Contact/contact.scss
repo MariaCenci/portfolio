@@ -22,8 +22,8 @@
 
     h2 {
       color: map-get($colors, color-dark-gray);
-      font-size: map-get(map-get($mobile, font-size), title3);
-      margin-bottom: 20px;
+      font-size: map-get(map-get($mobile, font-size), title2);
+      margin: 18px;
       
     }
     .contact-link {
@@ -39,7 +39,7 @@
       }
       h4 {
         color: map-get($colors, color-dark-gray);
-        font-size: map-get(map-get($mobile, font-size), title2);
+        font-size: map-get(map-get($mobile, font-size), subtitle);
       }
 .contact-infos{
     text-align: center;
@@ -70,6 +70,11 @@ flex-direction: column;
 
     h3{
         text-align: start;
+    }
+
+    h2{
+     margin: 0;
+     font-size: map-get(map-get($mobile, font-size), title3);
     }
    
 }

@@ -15,7 +15,7 @@
 @mixin subtitle-about-mobile() {
   color: map-get($colors, color-primary);
   font-size: map-get(map-get($mobile, font-size), subtitle-about);
-  margin-bottom: 0.4em;
+  margin-bottom: 0.8em;
   text-align: center;
 }
 
@@ -33,7 +33,7 @@
 }
 
 @mixin container-wrapper-mobile() {
-  padding: 6em 1.4em;
+  padding: 6em 1.8em;
 }
 
 @mixin wrapper-medium-screen() {
