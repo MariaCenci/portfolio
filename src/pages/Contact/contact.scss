@@ -5,11 +5,16 @@
   @include flex-center;
   @include container-wrapper-mobile;
 
+
   .content-contact {
     @include flex-center;
     flex-direction: column;
     gap: 20px;
 
+    a{
+      text-decoration: none;
+      color: map-get(map-get($colors, color), body)
+  }
     h3 {
       @include subtitle-mobile;
       text-align: center;

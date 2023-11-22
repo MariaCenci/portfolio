@@ -16,10 +16,10 @@ const Home: React.FC = () => {
                 </p>
 
                 <span className="social-icons">
-                  <a href="https://github.com/MariaCenci">
+                  <a href="https://github.com/MariaCenci" target="_blank">
                     <img src="src/icons/github.svg" alt="" />
                   </a>
-                  <a href="https://www.linkedin.com/in/maria-fernanda-cenci-23a909276/">
+                  <a href="https://www.linkedin.com/in/maria-fernanda-cenci-23a909276/" target="_blank">
                     <img src="src/icons/linkedin-icon.svg" alt="" />
                   </a>
                 </span>

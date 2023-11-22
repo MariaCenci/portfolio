@@ -10,25 +10,21 @@
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.472);
   gap: 40px;
-  height: 70vh;
+  max-height: 110vh;
 
   .project {
-    width: 100%;
+    width: 88%;
+    padding: 5px;
     
-
-
-h4{
- text-align: center;
-
-}
-
-    /*
     img {
+      display: flex;
       width: 100%;
+     align-items: center;
+     justify-content: center;
       border-radius: 10px;
     }
   }
-*/
+
   }
   .project-description {
     @include flex-center;
@@ -66,9 +62,10 @@ padding: 0 30px;
       gap: 4px;
       margin: 0 15px;
 
-      p {
+      a {
         color: map-get($colors, color-primary);
-      
+      text-decoration: none;
+      cursor: pointer;
       }
 
       img.github {
@@ -80,7 +77,7 @@ padding: 0 30px;
       }
     }
   }
-}
+
 
 @media (min-width: 768px) and (max-width: 1020px) {
 .project-card{
@@ -100,15 +97,17 @@ p{
   .project-card {
 display: flex;
 flex-direction: row;
-height: 50vh;
+max-height: 80vh;
 
 
 .project{
  
-width: 70%;
+width: 66%;
+padding: 10px;
 
 img{
-  height: 40vh;
+height: 56vh;
+width: 100%;
 }
 
 }
