@@ -8,7 +8,7 @@ const Home: React.FC = () => {
           <div className="content-hero">
             <div className="main-hero">
               <div className="hero-text">
-                <h1>Programadora web👩‍💻</h1>
+                <h1>Programadora web junior👩‍💻</h1>
 
                 <p>
                   Olá, sou Maria Fernanda Cenci, desenvolvedora web junior
