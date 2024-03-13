@@ -11,133 +11,102 @@
   box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.472);
   gap: 40px;
   max-height: 140vh;
-  
 
   .project {
     width: 88%;
     padding: 5px;
-   
+
     img {
       display: flex;
       width: 100%;
-     align-items: center;
-     justify-content: center;
+      align-items: center;
+      justify-content: center;
       border-radius: 10px;
     }
   }
+}
+.project-description {
+  @include flex-center;
+  flex-direction: column;
 
+  h3.title-project {
+    font-size: map-get(map-get($mobile, font-size), project-title);
+    color: map-get($colors, color-tertiary);
+    text-transform: none;
+    margin-bottom: 20px;
   }
-  .project-description {
-    @include flex-center;
-    flex-direction: column;
-
-h3.title-project{
-font-size: map-get(map-get($mobile, font-size),project-title);
-color: map-get($colors, color-tertiary);
-text-transform: none;
-margin-bottom: 20px;
-}
-
-
-    p.project-text {
-      font-size: map-get(map-get($mobile, font-size), body);
-      text-align: center;
-padding: 0 30px;
-
-    }
-  }
-
-  .see-project {
-    @include flex-center;
-    margin-top: 3em;
-
-    .link-project {
-      @include flex-center;
-
-
-    }
-
-    span {
-      @include flex-center;
-      justify-content: space-between;
-      gap: 4px;
-      margin: 0 15px;
-
-      a {
-        color: map-get($colors, color-primary);
-      text-decoration: none;
-      cursor: pointer;
-      }
-
-      img.github {
-        
-        width: 1.3em;
-      }
-      img.demo {
-        width: 1.7em;
-      }
-    }
-  }
-
-
-@media (min-width: 768px) and (max-width: 1020px) {
-.project-card{
-   .project-description {
-
-p{
-  font-size: map-get(map-get($tablet, font-size), body);
-}
-  }
-
-
-}
- 
-}
-
-@media screen and (min-width: 1021px) {
-  .project-card {
-display: flex;
-flex-direction: row;
-max-height: 80vh;
-max-width: 76em;
-
-.project{
- 
-width: 78%;
-padding: 10px;
-
-img{
-  max-height: 55vh;
-width: 96%;
-}
-
-}
-
-.project-description{
-width: 80%;
-
-
 
   p.project-text {
     font-size: map-get(map-get($mobile, font-size), body);
     text-align: center;
-padding: 0 55px;
-
+    padding: 0 30px;
   }
 }
 
+.see-project {
+  @include flex-center;
+  margin-top: 3em;
 
-}
-
-
-
-
-
+  .link-project {
+    @include flex-center;
   }
 
+  span {
+    @include flex-center;
+    justify-content: space-between;
+    gap: 4px;
+    margin: 0 15px;
 
+    a {
+      color: map-get($colors, color-primary);
+      text-decoration: none;
+      cursor: pointer;
+    }
 
+    img.github {
+      width: 1.3em;
+    }
+    img.demo {
+      width: 1.7em;
+    }
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1020px) {
+  .project-card {
+    .project-description {
+      p {
+        font-size: map-get(map-get($tablet, font-size), body);
+      }
+    }
+  }
+}
 
+@media screen and (min-width: 1021px) {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    max-height: 80vh;
+    max-width: 76em;
 
+    .project {
+      width: 78%;
+      padding: 10px;
 
+      img {
+        max-height: 55vh;
+        width: 96%;
+      }
+    }
+
+    .project-description {
+      width: 80%;
+
+      p.project-text {
+        font-size: map-get(map-get($mobile, font-size), body);
+        text-align: center;
+        padding: 0 55px;
+      }
+    }
+  }
+}

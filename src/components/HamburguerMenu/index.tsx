@@ -42,13 +42,13 @@ setActiveMenu(false)
                 <Link to="home"  smooth={true} duration={500}  onClick={closeMenu} >Home</Link>
               </li>
               <li>
-                <Link to="about"  smooth={true} duration={500}  onClick={closeMenu}>About</Link >
+                <Link to="about"  smooth={true} duration={500}  onClick={closeMenu}>Sobre</Link >
               </li>
               <li>
-                <Link to="projects" smooth={true} duration={500} onClick={closeMenu}>Projects</Link>
+                <Link to="projects" smooth={true} duration={500} onClick={closeMenu}>Projetos</Link>
               </li>
               <li>
-                <Link to="contact"  smooth={true} duration={500}  onClick={closeMenu} >Contact</Link>
+                <Link to="contact"  smooth={true} duration={500}  onClick={closeMenu} >Contato</Link>
               </li>
             </ul>
           </div>

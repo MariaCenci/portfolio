@@ -8,11 +8,11 @@ const Home: React.FC = () => {
           <div className="content-hero">
             <div className="main-hero">
               <div className="hero-text">
-                <h1>Front-End Developer👩‍💻</h1>
+                <h1>Desenvolvedora web👩‍💻</h1>
 
                 <p>
-                  Hi, I'm Maria Fernanda Cenci, a Front-End Web Developer based
-                  in Bergamo, Italy.
+                  Olá, sou Maria Fernanda Cenci, desenvolvedora web junior
+                  em Laguna, Santa Catarina.
                 </p>
 
                 <span className="social-icons">
