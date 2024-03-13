@@ -68,7 +68,7 @@ const ProjectCard: React.FC = () => {
             </div>
             <div className="link-project">
               <span>
-                <a href="" target="_blank">
+                <a href="https://buscador-cep-gamma-virid.vercel.app/" target="_blank">
                   Demo
                 </a>
                 <img src="/icons/eye.svg" alt="" className="demo" />
