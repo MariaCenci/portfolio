@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <a href="https://github.com/MariaCenci" target="_blank">
                 <img src="/icons/github-white.svg" alt="github" />
               </a>
-              <a href="https://www.linkedin.com/in/maria-fernanda-cenci-23a909276/" target="_blank">
+              <a href="https://www.linkedin.com/in/maria-fernanda-potricos-cenci-23a909276/" target="_blank">
                 <img src="/icons/linkedin-white.svg" alt="linkedin" />
               </a>
             </span>

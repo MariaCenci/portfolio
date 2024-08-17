@@ -8,18 +8,17 @@ const Home: React.FC = () => {
           <div className="content-hero">
             <div className="main-hero">
               <div className="hero-text">
-                <h1>Programadora Web Junior👩‍💻</h1>
+                <h1>Junior Web Developer👩‍💻</h1>
 
                 <p>
-                  Olá, sou Maria Fernanda Cenci, desenvolvedora web junior
-                  em Laguna, Santa Catarina.
+                  Hello, I'm Maria Fernanda, Junior Web Developer!
                 </p>
 
                 <span className="social-icons">
                   <a href="https://github.com/MariaCenci" target="_blank">
                     <img src="/icons/github.svg" alt="" />
                   </a>
-                  <a href="https://www.linkedin.com/in/maria-fernanda-cenci-23a909276/" target="_blank">
+                  <a href="https://www.linkedin.com/in/maria-fernanda-potricos-cenci-23a909276/" target="_blank">
                     <img src="/icons/linkedin-icon.svg" alt="" />
                   </a>
                 </span>

@@ -8,21 +8,21 @@ const Contact: React.FC = () => {
         <div className="container-contact">
           <div className="content-contact">
             <div className="contact-text">
-              <h3>Contato</h3>
+              <h3>Contact</h3>
 
-              <h2>Me contate! 🙂</h2>
+              <h2>Contact me! 🙂</h2>
             </div>
 
             <div className="contact-link">
               <div className="contact-icon">
-                <a href="mailto: mariafcenci@gmail.com">
+                <a href="mailto: mariafcenci.dev@gmail.com">
                   <img src="/icons/email-blue.png" alt="" />
                 </a>
               </div>
               <div className="contact-infos">
                 <h4>Email</h4>
-                <a href="mailto: mariafcenci@gmail.com">
-                  <p>mariafcenci@gmail.com</p>{" "}
+                <a href="mailto: mariafcenci.dev@gmail.com">
+                  <p>mariafcenci.dev@gmail.com</p>{" "}
                 </a>
               </div>
             </div>

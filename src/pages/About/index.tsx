@@ -11,15 +11,10 @@ const About: React.FC = () => {
           </div>
 
           <div className="text-about">
-            <h3>Sobre mim</h3>
-            <h2>Programadora Web Junior em Laguna, Santa Catarina🌐</h2>
+            <h3>About me</h3>
+            <h2>Junior Web Developer in Laguna, Santa Catarina🌐</h2>
             <p>
-              Como desenvolvedora web júnior, estou dedicada a criar aplicações
-              web que combinam funcionalidade com design bonito. Minhas
-              principais ferramentas são TypeScript, React e Sass, e estou
-              constantemente aprimorando minhas habilidades. Prezo por construir
-              e manter sites responsivos para uma experiência de usuário
-              interativa e fluida.
+            As a junior web developer, I'm dedicated to creating web applications that combine functionality with beautiful design. My main tools are React.js, Typescript and Sass. In order to reach the excellence, I’m constantly improving my skills and learning as much as possible. I value building and keep responsive websites for an interactive and fluid user experience.
             </p>
           </div>
         </div>
