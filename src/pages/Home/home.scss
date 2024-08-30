@@ -55,13 +55,13 @@
           display: flex;
           flex-direction: column;
           order: -2;
-          width: 60%;
-
+          width: 40%;
           margin: 9em 0 3.5em 0;
 
           img {
             border-radius: 50%;
-
+            border: solid 1px rgb(189, 189, 189);
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.317) ;
             width: 100%;
           }
         }
@@ -71,44 +71,53 @@
 
   /**tech stack**/
 
-  .tech-stack {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    margin: 70px 0;
-
-    .underline {
-      background-color: map-get($colors, separator-line);
-      width: 6em;
-      border-radius: 10px;
-      height: 1.5px;
-      margin-bottom: 20px;
-      @include flex-center;
-    }
-
-    p {
-      margin-bottom: 10px;
-      font-size: map-get(map-get($mobile, font-size), subtitle);
-      color: map-get($colors, color-tertiary);
-    }
-
-    .icons-stack {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 16px;
-      justify-content: center;
+  .container-tech-stack {
+    .tech-stack-wrapper {
+      display: flex;
       align-items: center;
-      width: 100%;
-      padding: 20px 40px;
-      gap: 20px;
+      flex-direction: column;
 
-      span img {
-        width: 2.8em;
-        height: 2.8em;
-        border-radius: 8px;
-        box-shadow: 0 0 6px rgba(57, 57, 57, 0.822);
-        background-color: map-get($colors, bg-section);
+      margin: 70px 0;
+
+      .tech-stack-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+      .underline {
+        background-color: map-get($colors, separator-line);
+        width: 6em;
+        border-radius: 10px;
+        height: 1.5px;
+        margin-bottom: 20px;
+        @include flex-center;
+      }
+
+      p {
+        margin-bottom: 10px;
+        
+        font-size: map-get(map-get($mobile, font-size), subtitle);
+        color: map-get($colors, color-tertiary);
+      }
+    }
+
+      .icons-stack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 40px;
+        gap: 20px;
+
+        span img {
+          width: 2.8em;
+          height: 2.8em;
+          border-radius: 8px;
+          box-shadow: 0 0 6px rgba(57, 57, 57, 0.822);
+          background-color: map-get($colors, bg-section);
+        }
       }
     }
   }
@@ -134,7 +143,7 @@
       @include wrapper-medium-screen;
       margin: 0 auto;
       max-width: 120rem;
-      padding: .2em 8em ;
+      padding: 0.2em 8em;
 
       .content-hero {
         .hero-text {
@@ -159,11 +168,9 @@
 
 @media screen and (min-width: 900px) {
   #home.hero {
+    padding: 130px 70px 0px 70px;
     .container-hero {
       @include flex-center;
-      flex-direction: row;
-      padding: 12em 4.5em;
-      margin: 0 auto;
       max-width: 80em;
       .content-hero {
         @include flex-center;
@@ -174,7 +181,7 @@
 
           max-width: 100em;
 
-          gap: 6em;
+          gap: 30px;
 
           .hero-text {
             display: flex;
@@ -193,6 +200,7 @@
               text-align: left;
               padding: 0;
               font-size: map-get(map-get($desktop, font-size), body);
+              padding-right: 30px;
             }
 
             span.social-icons img {
@@ -207,7 +215,7 @@
           .hero-img {
             order: 2;
             @include flex-center;
-            width: 40%;
+            width: 32%;
             margin: 0;
 
             img {
@@ -217,41 +225,46 @@
         }
       }
 
-      .tech-stack {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        padding: 1em 0 1em 0;
-        margin: 3em 0 1em 0;
-        width: 90%;
+      .container-tech-stack {
+       display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 30px;
 
-        .text-stack {
-          @include flex-center;
-          gap: 0.5em;
-          p {
-            @include flex-center;
-            margin: 0;
-          }
-          .underline {
-            @include flex-center;
-
-            width: 2em;
-            margin: 0;
-
-            transform: rotate(90deg);
-          }
-        }
-
-        .icons-stack {
-          @include flex-center;
-          width: 80%;
+       .tech-stack-wrapper {
           flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: start;
+          
+       
+          .tech-stack-text {
+            @include flex-center;
+            flex-direction: row;
+            gap: 0.5em;
+            p {
+              @include flex-center;
+              margin: 0;
+              width: 100%;
+            }
+            .underline {
+              @include flex-center;
 
-          img:hover {
-            cursor: pointer;
-            @include hover-icons-stack;
+              width: 2em;
+              margin: 0;
+
+              transform: rotate(90deg);
+            }
+          }
+
+          .icons-stack {
+            @include flex-center;
+            width: 80%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+
+            img:hover {
+              cursor: pointer;
+              @include hover-icons-stack;
+            }
           }
         }
       }

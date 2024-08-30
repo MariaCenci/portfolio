@@ -12,7 +12,7 @@ const About: React.FC = () => {
 
           <div className="text-about">
             <h3>About me</h3>
-            <h2>Junior Web Developer in Laguna, Santa Catarina🌐</h2>
+            <h2>Junior Web Developer in Laguna, Santa Catarina 🌐</h2>
             <p>
             As a junior web developer, I'm dedicated to creating web applications that combine functionality with beautiful design. My main tools are React.js, Typescript and Sass. In order to reach the excellence, I’m constantly improving my skills and learning as much as possible. I value building and keep responsive websites for an interactive and fluid user experience.
             </p>

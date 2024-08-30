@@ -30,7 +30,7 @@ const ProjectCard: React.FC = () => {
             </div>
             <div className="link-project">
               <span>
-                <a href="https://land-sweet-dreams-424ivovsw-maria-cencis-projects.vercel.app/" target="_blank">
+                <a href="https://land-sweet-dreams-l2457a5t8-maria-cencis-projects.vercel.app/" target="_blank">
                   Demo
                 </a>
                 <img src="/icons/eye.svg" alt="" className="demo" />
@@ -67,7 +67,7 @@ const ProjectCard: React.FC = () => {
             <div className="link-project">
               <span>
                 <a
-                  href="https://movies-library-kappa.vercel.app/"
+                  href="https://movies-library-ck28xzh7p-maria-cencis-projects.vercel.app/"
                   target="_blank"
                 >
                   Demo

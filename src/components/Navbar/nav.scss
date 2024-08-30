@@ -8,21 +8,27 @@
 /**big screens**/
 
 @media screen and (min-width: 900px) {
+
+  
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    height: 8vh;
+    
     width: 100%;
 
     border: rgba(144, 143, 143, 0.981);
   }
 
   .logo {
-    font-size: map-get(map-get($mobile, font-size), logo);
-    margin-left: 10px;
+
+    span{
+      font-size: map-get(map-get($mobile, font-size), logo);
+      padding-left: 30px;
+    }
+    
   }
 
   .navbar-links {
@@ -30,6 +36,7 @@
     flex-direction: row;
     justify-content: center;
     font-family: map-get($global-fonts, font-logo);
+  padding-right: 30px;
   }
 
   .navbar-links ul {
@@ -43,7 +50,7 @@
   .navbar-links li {
     display: flex;
     margin-right: 30px;
-    font-size: map-get(map-get($desktop, font-size), body);
+    font-size: map-get(map-get($mobile, font-size), body);
   }
 
   .navbar-links li a {
@@ -56,5 +63,5 @@
 @include hover-links;
   }
 
+  }
 
-}

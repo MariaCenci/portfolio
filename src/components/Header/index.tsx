@@ -7,7 +7,7 @@ const Header = () => {
     <section id="header">
       <div className="header-container">
         <div className="logo">
-          <span>MariaCenci</span>
+          <span>{'{ MariaCenci }'}</span>
         </div>
         <Navbar />
       </div>
