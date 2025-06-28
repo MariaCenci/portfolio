@@ -13,7 +13,8 @@
 
     a{
       text-decoration: none;
-      color: map-get(map-get($colors, color), body)
+      color: map-get(map-get($colors, color), body);
+    
   }
     h3 {
       @include subtitle-mobile;
@@ -23,13 +24,13 @@
 
     h2 {
       color: map-get($colors, color-dark-gray);
-      font-size: map-get(map-get($mobile, font-size), title2);
+      font-size: map-get(map-get($mobile, font-size), body);
       margin: 18px;
       
     }
     .contact-link {
       @include flex-center;
-      flex-direction: column;
+    flex-direction: column;
       margin: 5px 0;
       gap: 2px;
 
@@ -37,20 +38,18 @@
         box-shadow: 1px 1px 15px rgba(209, 209, 209, 0.711);
         border-radius: 50%;
         padding: 10px;
+        width: 48px;
       }
       h4 {
         color: map-get($colors, color-dark-gray);
-        font-size: map-get(map-get($mobile, font-size), subtitle);
+        font-size: map-get(map-get($mobile, font-size), body);
       }
 .contact-infos{
     text-align: center;
 }
-
     }
   }
 }
-
-
 
 @media screen and (min-width: 1021px) {
     
@@ -66,8 +65,7 @@ flex-direction: column;
 .contact-text{
   display: flex;
   flex-direction: column;
-
-    width: 100%;
+  width: 100%;
 
     h3{
         text-align: start;
@@ -75,7 +73,7 @@ flex-direction: column;
 
     h2{
      margin: 0;
-     font-size: map-get(map-get($mobile, font-size), title3);
+     font-size: map-get(map-get($mobile, font-size), body);
     }
    
 }
