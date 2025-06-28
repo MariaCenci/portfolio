@@ -3,7 +3,7 @@
 
 .container-footer {
   @include flex-center;
-  padding: 3.5em 0;
+  padding: 2.5em 0;
   background: linear-gradient(
     180deg,
     rgba(0, 28, 74, 1) 4%,
@@ -16,12 +16,12 @@
     flex-direction: column;
     h3 {
       color: map-get($colors, color-secondary);
-      font-size: 16px;
+      font-size: 14px;
     }
 
     span {
       @include flex-center;
-      gap: 14px;
+      gap: 16px;
       img {
         width: 2.2em;
        

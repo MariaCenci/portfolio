@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <section id="footer">
         <div className="container-footer">
           <div className="content-footer">
-            <h3>Copyright©2023</h3>
+            <h3>Copyright©2025</h3>
 
             <span className="social-icons">
               <a href="https://github.com/MariaCenci" target="_blank">
